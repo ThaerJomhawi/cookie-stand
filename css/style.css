@@ -1,10 +1,15 @@
 header {
-    background-color: rgb(85, 68, 184);
+    background-color: #773d3dc7;
     height: 100%;
 }
 
 header img {
     width: 200px;
+    float: left;
+    background-color:#d6cfcf8f ;
+    padding: 6px;
+    border-style: solid;
+    border-color: #f7e440;
 }
 
 header nav {
@@ -19,47 +24,84 @@ header nav ul li {
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia;
     font-weight: bold;
-    color: black;
-    background-color: cornsilk;
+    color: #f7e440;
 }
 
-main h2 {
-    color: rgb(80, 12, 168);
-    font-size: 50px;
-    font-family: Cambria, Cochin, Georgia;
+
+
+
+body{
     text-align: center;
+        background-image: url("/img/cookies.jpg") ;
+        margin: 1.5%;
+    }
+    div{
+    
+        background-color: #773d3dc7;
+        margin: 1%;
+        padding: 1%;
+        border:1px;
+    
+    }
+   
+    table,th,td{
+    
+        border: 3px solid;
+        padding: 7px;
+        font-family:Arial, Helvetica, sans-serif;
+        color:rgb(255, 255, 255);
+        border-color: black;
+        
+       
+    }
+    h1{
+        text-align: center;
+        font-size: 160%;
+        font-weight: bolder;
+       color: #f7e440;
+       font-family: "Sofia", sans-serif;
+      
+    
+    }
+
+
+    h2{
+        background-color: #683939e5;
+        font-size: 200%;
+        font-weight: bold;
+        font-family: "Sofia", sans-serif;
+        color: #f7e440;
+        padding: 20px;
+        
+        
+    }
+    
+    main p{
+
+        font-size: 100px;
+        color:#f7e440; 
+        background-color: #683939e5;
+
+    }
+    
+    footer{
+        background-color: #683939e5;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:#f7e440; 
+        
+    }
+    
+    
+           
+    a {
+
+    font-family: "Sofia", sans-serif;
+    color:#f7e440;
+    text-decoration: none;
+
 }
-
-
-
-main p {
-    padding-top: 10px;
-    font-size: 20px;
-    color: rgb(96, 15, 202);
-    font-family: Rockwell;
-    text-align: center;
-}
-
-main ul {
-    list-style: disc;
-    padding-top: 10px;
-    padding-left: 30px;
-}
- footer {
-
-    background-color: blue;
-    padding-bottom: 10px;
-    text-align: center;
-
-}
-
-#title{
-    color: blue;
-    text-align: left;
-}
-#cookie {
-    color: blue;
-
-
-}
- 
+    
+    
