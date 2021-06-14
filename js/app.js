@@ -58,19 +58,17 @@ function headerTable() {
     let rawHeading = document.createElement('tr');
     table.appendChild(rawHeading);
 
+    let th1 = document.createElement('th');
+    rawHeading.appendChild(th1);
+    th1.textContent = " ";
+
     for (let i = 0; i < workingHours.length; i++) {
         let th = document.createElement('th');
         rawHeading.appendChild(th);
         th.textContent = workingHours[i];
 
     }
-
-
-
-
-    let th1 = document.createElement('th');
-    rawHeading.appendChild(th1);
-    th1.textContent = "";
+ 
 
     let th2 = document.createElement('th');
     rawHeading.appendChild(th2);
