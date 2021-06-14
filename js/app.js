@@ -17,32 +17,23 @@ let seattleShop = {
     maxCst: 65,
     avgCookiesSale: 6.3,
     cookiesPerHour: [],
-    randomCostumer: [],
     totalSold: 0,
 
-    getRandomCostumer: function () {
-        for (let i = 0; i < workingHours.length; i++) {
-            let rand = randomNo(this.MinCst, this.MaxCst);
-            this.randomCostumer[i] = rand;
-
-
-        }
-
-
-    },
-
-    cookiesPerRandom: function () {
-        let total = 0;
+    getCustomer: function () {
 
         for (let i = 0; i < workingHours.length; i++) {
-            let cookies = (this.randomCostumer[i] * this.avgCookiesSale);
-            this.cookiesPerHour[i] = cookies;
-            total = total + this.cookiesPerHour[i];
-            console.log(cookies);
+
+
+            let cookies = Math.ceil(randomNo(this.minCst, this.maxCst) * this.avgCookiesSale);
+
+            this.cookiesPerHour.push(cookies);
+
+            this.totalSold += cookies;
+
         }
+        
 
     },
-
 
     render: function () {
 
@@ -68,7 +59,7 @@ let seattleShop = {
 
         let listItem = document.createElement('li');
         hourList.appendChild(listItem);
-        listItem.textContent = `Total: ${this.TotalSold} cookies`
+        listItem.textContent = `Total: ${this.totalSold} cookies`
 
 
     }
@@ -79,54 +70,34 @@ let seattleShop = {
 
 }
 
-console.log(seattleShop.randomCostumer);
-console.log(seattleShop.cookiesPerHour);
-console.log(seattleShop.minCst);
-console.log(seattleShop.maxCst);
-console.log(seattleShop.location);
-console.log(seattleShop.avgCookiesSale);
-console.log(seattleShop.totalSold);
-console.log(randomNo(seattleShop.minCst, seattleShop.maxCst))
-
-seattleShop.getRandomCostumer();
-seattleShop.cookiesPerRandom();
+seattleShop.getCustomer();
 seattleShop.render();
 
-
-
 // 1.2 creating object for Tokyo Shop
+
 let tokyoShop = {
     location: 'Tokyo',
     minCst: 3,
     maxCst: 24,
     avgCookiesSale: 1.2,
     cookiesPerHour: [],
-    randomCostumer: [],
     totalSold: 0,
 
-    getRandomCostumer: function () {
-        for (let i = 0; i < workingHours.length; i++) {
-            let rand = randomNo(this.MinCst, this.MaxCst);
-            this.randomCostumer[i] = rand;
-
-
-        }
-
-
-    },
-
-    cookiesPerRandom: function () {
-        let total = 0;
+    getCustomer: function () {
 
         for (let i = 0; i < workingHours.length; i++) {
-            let cookies = (this.randomCostumer[i] * this.avgCookiesSale);
-            this.cookiesPerHour[i] = cookies;
-            total = total + this.cookiesPerHour[i];
-            console.log(cookies);
+
+
+            let cookies = Math.ceil(randomNo(this.minCst, this.maxCst) * this.avgCookiesSale);
+
+            this.cookiesPerHour.push(cookies);
+
+            this.totalSold += cookies;
+
         }
+        
 
     },
-
 
     render: function () {
 
@@ -152,7 +123,7 @@ let tokyoShop = {
 
         let listItem = document.createElement('li');
         hourList.appendChild(listItem);
-        listItem.textContent = `Total: ${this.TotalSold} cookies`
+        listItem.textContent = `Total: ${this.totalSold} cookies`
 
 
     }
@@ -163,12 +134,8 @@ let tokyoShop = {
 
 }
 
-tokyoShop.getRandomCostumer();
-tokyoShop.cookiesPerRandom();
+tokyoShop.getCustomer();
 tokyoShop.render();
-
-
-
 
 // 1.3 creating object for Dubai Shop
 let dubaiShop = {
@@ -177,32 +144,23 @@ let dubaiShop = {
     maxCst: 38,
     avgCookiesSale: 3.7,
     cookiesPerHour: [],
-    randomCostumer: [],
     totalSold: 0,
 
-    getRandomCostumer: function () {
-        for (let i = 0; i < workingHours.length; i++) {
-            let rand = randomNo(this.MinCst, this.MaxCst);
-            this.randomCostumer[i] = rand;
-
-
-        }
-
-
-    },
-
-    cookiesPerRandom: function () {
-        let total = 0;
+    getCustomer: function () {
 
         for (let i = 0; i < workingHours.length; i++) {
-            let cookies = (this.randomCostumer[i] * this.avgCookiesSale);
-            this.cookiesPerHour[i] = cookies;
-            total = total + this.cookiesPerHour[i];
-            console.log(cookies);
+
+
+            let cookies = Math.ceil(randomNo(this.minCst, this.maxCst) * this.avgCookiesSale);
+
+            this.cookiesPerHour.push(cookies);
+
+            this.totalSold += cookies;
+
         }
+        
 
     },
-
 
     render: function () {
 
@@ -228,7 +186,7 @@ let dubaiShop = {
 
         let listItem = document.createElement('li');
         hourList.appendChild(listItem);
-        listItem.textContent = `Total: ${this.TotalSold} cookies`
+        listItem.textContent = `Total: ${this.totalSold} cookies`
 
 
     }
@@ -239,11 +197,8 @@ let dubaiShop = {
 
 }
 
-dubaiShop.getRandomCostumer();
-dubaiShop.cookiesPerRandom();
+dubaiShop.getCustomer();
 dubaiShop.render();
-
-
 
 // 1.4 creating object for Paris Shop
 let parisShop = {
@@ -252,32 +207,23 @@ let parisShop = {
     maxCst: 38,
     avgCookiesSale: 2.3,
     cookiesPerHour: [],
-    randomCostumer: [],
     totalSold: 0,
 
-    getRandomCostumer: function () {
-        for (let i = 0; i < workingHours.length; i++) {
-            let rand = randomNo(this.MinCst, this.MaxCst);
-            this.randomCostumer[i] = rand;
-
-
-        }
-
-
-    },
-
-    cookiesPerRandom: function () {
-        let total = 0;
+    getCustomer: function () {
 
         for (let i = 0; i < workingHours.length; i++) {
-            let cookies = (this.randomCostumer[i] * this.avgCookiesSale);
-            this.cookiesPerHour[i] = cookies;
-            total = total + this.cookiesPerHour[i];
-            console.log(cookies);
+
+
+            let cookies = Math.ceil(randomNo(this.minCst, this.maxCst) * this.avgCookiesSale);
+
+            this.cookiesPerHour.push(cookies);
+
+            this.totalSold += cookies;
+
         }
+        
 
     },
-
 
     render: function () {
 
@@ -303,7 +249,7 @@ let parisShop = {
 
         let listItem = document.createElement('li');
         hourList.appendChild(listItem);
-        listItem.textContent = `Total: ${this.TotalSold} cookies`
+        listItem.textContent = `Total: ${this.totalSold} cookies`
 
 
     }
@@ -314,47 +260,33 @@ let parisShop = {
 
 }
 
-parisShop.getRandomCostumer();
-parisShop.cookiesPerRandom();
+parisShop.getCustomer();
 parisShop.render();
 
-
-
 // 1.5 creating object for Lima Shop
-
-
 let limaShop = {
     location: 'Lima',
     minCst: 2,
     maxCst: 16,
     avgCookiesSale: 4.6,
     cookiesPerHour: [],
-    randomCostumer: [],
     totalSold: 0,
 
-    getRandomCostumer: function () {
-        for (let i = 0; i < workingHours.length; i++) {
-            let rand = randomNo(this.MinCst, this.MaxCst);
-            this.randomCostumer[i] = rand;
-
-
-        }
-
-
-    },
-
-    cookiesPerRandom: function () {
-        let total = 0;
+    getCustomer: function () {
 
         for (let i = 0; i < workingHours.length; i++) {
-            let cookies = (this.randomCostumer[i] * this.avgCookiesSale);
-            this.cookiesPerHour[i] = cookies;
-            total = total + this.cookiesPerHour[i];
-            console.log(cookies);
+
+
+            let cookies = Math.ceil(randomNo(this.minCst, this.maxCst) * this.avgCookiesSale);
+
+            this.cookiesPerHour.push(cookies);
+
+            this.totalSold += cookies;
+
         }
+        
 
     },
-
 
     render: function () {
 
@@ -380,7 +312,7 @@ let limaShop = {
 
         let listItem = document.createElement('li');
         hourList.appendChild(listItem);
-        listItem.textContent = `Total: ${this.TotalSold} cookies`
+        listItem.textContent = `Total: ${this.totalSold} cookies`
 
 
     }
@@ -391,17 +323,21 @@ let limaShop = {
 
 }
 
-limaShop.getRandomCostumer();
-limaShop.cookiesPerRandom();
+limaShop.getCustomer();
 limaShop.render();
+
+
+
+
+
+
 
 
 
 // Define a function to give random number for the hours 
 
 function randomNo(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
+    
     return Math.floor(Math.random() * (max - min + 1)) + min;
 
 }
