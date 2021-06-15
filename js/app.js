@@ -144,7 +144,7 @@ function footerTable(){
         let th4 = document.createElement('th');
         rowFooter.appendChild(th4);
         th4.textContent = sumCookies;
-    }console.log(sumCookies);
+    }
  
     for (let i = 0; i < shops.length; i++) {
         total += shops[i].totalSold;
