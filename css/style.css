@@ -1,48 +1,49 @@
 header {
-    background-color: #773d3dc7;
+    background-color: #773d3de7;
     height: 100%;
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
 }
 
 header img {
     width: 200px;
-    float: left;
     background-color:#d6cfcf8f ;
-    padding: 6px;
-    border-style: solid;
-    border-color: #f7e440;
+    padding: 15px;
+    
+    
 }
 
-header nav {
-    float: right;
-    padding-top: 0px;}
-   
-
-header nav ul li {
-    display: inline-block;
-    padding: 15px;
-    padding-top: 0px;
+header a {
+    
+    text-transform: uppercase;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia;
     font-weight: bold;
     color: #f7e440;
+    padding-right: 10px;
+    text-decoration: none;
+    
 }
 
-
-
-
+   
 body{
         text-align: center;
-        background-image: url("./img/cookies.jpg") ;
-        margin: 1.5%;
+        background-image: url("https://image.freepik.com/free-vector/hand-drawn-cookies-pattern-seamless-white-background_46250-276.jpg") ;
+        display: grid;
+        grid-template-rows: 100px 1fr 50px;
+        background-attachment: fixed;
     }
-    div{
+
+    #title {
     
         background-color: #773d3dc7;
         margin: 1%;
         padding: 1%;
-        border:1px;
+        
     
     }
+
    
     table,th,td{
     
@@ -52,7 +53,16 @@ body{
         color:rgb(255, 255, 255);
         border-color: black;
         
+        
        
+    }
+    table{
+
+        background-color:#773d3dc7 ;
+        float: center;
+        margin: 1%;
+        padding: 1%;
+        border:1px;
     }
     h1{
         text-align: center;
@@ -60,6 +70,7 @@ body{
         font-weight: bolder;
        color: #f7e440;
        font-family: "Sofia", sans-serif;
+       
       
     
     }
@@ -71,14 +82,15 @@ body{
         font-weight: bold;
         font-family: "Sofia", sans-serif;
         color: #f7e440;
-        padding: 20px;
+        margin-top: 35px;
+        gap:30px;
         
         
     }
     
     main p{
 
-        font-size: 100px;
+        font-size: 50px;
         color:#f7e440; 
         background-color: #683939e5;
 
@@ -91,17 +103,126 @@ body{
         font-size: 20px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color:#f7e440; 
+        align-items: center;
+        display: flex;
         
+    }
+        
+    #table_img_one{
+        display: grid;
+        width:100%;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        float: center;
+        background-color: #a88181d2;
+        justify-items: center;
+        padding:10px;
+        
+    }
+    #table_img_one img{
+        width: 200px ;
+        height: 200px;
+        border-radius: 25px;
+    }
+    #table_img_two{
+        display: grid;
+        width:100%;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr ; 
+        text-align: right;       
+        background-color: #a88181d2;
+        justify-items: center;
+        padding:10px;
+    }
+    #table_img_two img{
+        width: 200px ;
+        height: 200px;
+        border-radius: 25px;
+        
+        
+    }
+
+    #info {
+        display: grid;
+        gap: 30px;
+        margin-bottom: 30px;
+        background-color: #683939e5       
+    }
+         
+    #info ul li{
+        
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:#f7e440; 
+        align-items: center;
+        justify-items: center;
+        padding: 10px
+            
+    }
+    #info p{
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:#f7e440; 
+        align-items: center;
+        justify-items: center;
+        background-color: #683939e5;
+        padding: 20px;
+        
+
+    }
+    #info h3{
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:#f7e440; 
+        align-items: center;
+        justify-items: center;
+        background-color: #683939e5
+    }
+
+     #best h3 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:#40dcf7; 
+        align-items: center;
+        justify-items: center;
+        background-color: #815858fb;
+        
+        gap:10px;
+        
+
+    }
+    #soon{
+        
+        text-align: center;
+        font-weight: bold;
+        font-size: 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:#ff0000; 
+        align-items: center;
+        justify-items: center;
+        background-color: #f7e440;
+        padding : 35 px;
+        
+        
+    
+
+
     }
     
     
+    
+
            
-    a {
+    
 
-    font-family: "Sofia", sans-serif;
-    color:#f7e440;
-    text-decoration: none;
 
-}
     
     
