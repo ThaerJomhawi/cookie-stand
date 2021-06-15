@@ -68,7 +68,7 @@ function headerTable() {
         th.textContent = workingHours[i];
 
     }
- 
+
 
     let th2 = document.createElement('th');
     rawHeading.appendChild(th2);
@@ -98,10 +98,7 @@ Shop.prototype.render = function () {
         td1.textContent = this.cookiesPerHour[i];
     }
 
-    for (let i = 0; i < workingHours.length; i++) {
-        this.totalSold += this.cookiesPerHour[i];
 
-    }
     let td2 = document.createElement('td');
 
     rawInside.appendChild(td2);
@@ -122,37 +119,34 @@ for (let i = 0; i < shops.length; i++) {
 
 
 let sumCookies = 0;
-let result = 0;
 let total = 0;
 
 // making footer of table 
-function footerTable(){
+function footerTable() {
     let rowFooter = document.createElement('tr');
- 
+
     table.appendChild(rowFooter);
     let th3 = document.createElement('th');
     rowFooter.appendChild(th3);
     th3.textContent = "Total";
- 
+
 
     for (let i = 0; i < workingHours.length; i++) {
         sumCookies = 0;
         for (let j = 0; j < shops.length; j++) {
             sumCookies += shops[j].cookiesPerHour[i];
-            result += shops[j].cookiesPerHour[i];
-        }console.log(result);
+        }
         let th4 = document.createElement('th');
         rowFooter.appendChild(th4);
         th4.textContent = sumCookies;
     }
- 
+
     for (let i = 0; i < shops.length; i++) {
         total += shops[i].totalSold;
     }
     let th5 = document.createElement('th');
     rowFooter.appendChild(th5);
-    let totalS = total + result;
-    th5.textContent = totalS;
+    th5.textContent = total;
 }
 
 footerTable();

@@ -31,8 +31,8 @@ header nav ul li {
 
 
 body{
-    text-align: center;
-        background-image: url("/img/cookies.jpg") ;
+        text-align: center;
+        background-image: url("./img/cookies.jpg") ;
         margin: 1.5%;
     }
     div{
