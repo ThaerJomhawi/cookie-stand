@@ -154,4 +154,34 @@ footerTable();
 
 
 
+let form=document.getElementById('form');
+//add event listener
+console.log(form);
+
+form.addEventListener('submit',submitter);
+function submitter(event){
+   
+
+event.preventDefault();
+let location = event.target.location.value;
+let minCst = event.target.minCst.value;
+let maxCst = event.target.maxCst.value;
+let avgCookiesSale = event.target.avgCookiesSale.value;
+let addedShop = new Shop(location,minCst,maxCst,avgCookiesSale);
+
+
+addedShop.getcustomer();
+addedShop.render();
+
+rowFooter.removeChild(rowFooter.lastChild);
+
+
+
+footerTable();
+
+}
+
+
+
+
 
