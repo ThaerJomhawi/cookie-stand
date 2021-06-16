@@ -173,7 +173,7 @@ let addedShop = new Shop(location,minCst,maxCst,avgCookiesSale);
 addedShop.getcustomer();
 addedShop.render();
 
-
+rowFooter.delete(rowFooter.lastChild);
 
 
 
