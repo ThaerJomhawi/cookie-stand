@@ -216,7 +216,39 @@ body{
 
 
     }
-    
+
+    fieldset {
+
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:#000; 
+        justify-items: left;
+        background-color: #e2e1d2;
+        padding : 20 px;
+        border: 5px;
+        border-style: solid;
+        border-color:#683939e5 ;
+        margin : 20px;
+        margin-left: 400px;
+        margin-right: 400px;
+
+    }
+    #button{
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color:#000; 
+        background-color: #815858fb;
+        padding : 20 px;
+        border: 2px;
+        border-style: solid;
+        border-color:#683939e5 ;
+        margin: 10px;}
+        
+   
     
     
 
