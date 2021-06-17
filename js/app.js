@@ -167,17 +167,19 @@ let location = event.target.location.value;
 let minCst = event.target.minCst.value;
 let maxCst = event.target.maxCst.value;
 let avgCookiesSale = event.target.avgCookiesSale.value;
-let addedShop = new Shop(location,minCst,maxCst,avgCookiesSale);
 
+
+table.deleteRow(-1);
+
+let addedShop = new Shop(location,minCst,maxCst,avgCookiesSale);
 
 addedShop.getcustomer();
 addedShop.render();
-
-rowFooter.delete(rowFooter.lastChild);
-
-
-
 footerTable();
+form.reset();
+
+
+
 
 }
 
