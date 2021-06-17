@@ -146,9 +146,12 @@ body{
         display: grid;
         gap: 30px;
         margin-bottom: 30px;
-        background-color: #683939e5       
+        background-color: #683939e5  ; 
+        
     }
-         
+
+   
+    
     #info ul li{
         
         text-align: center;
@@ -158,8 +161,22 @@ body{
         color:#f7e440; 
         align-items: center;
         justify-items: center;
-        padding: 10px
-            
+        padding: 10px;
+        border: solid 3px white ;
+        background-color: #b69d9dc4;
+        margin-left: 35%;
+        margin-right: 35%;
+        display: grid;   
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+                   
+    }
+    @keyframes example
+    {
+        from {background-color: #b69d9dc4;}
+          to {background-color: red;}
+
     }
     #info p{
         text-align: center;
@@ -194,10 +211,14 @@ body{
         align-items: center;
         justify-items: center;
         background-color: #815858fb;
-        
         gap:10px;
         
 
+    }
+    #best{
+
+        margin-bottom: 2%;
+        border: solid #683939e5 6px ;
     }
     #soon{
         
@@ -209,11 +230,17 @@ body{
         align-items: center;
         justify-items: center;
         background-color: #f7e440;
-        padding : 35 px;
+        border : solid 5px #683939e5;
+        animation-name: amman;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+       margin-bottom: 1%;
         
-        
-    
-
+    }
+    @keyframes amman
+    {
+        from {background-color: #f7e440;}
+          to {background-color: #815858fb;}
 
     }
 
@@ -235,6 +262,12 @@ body{
         margin-left: 400px;
         margin-right: 400px;
 
+    }
+
+    fieldset p {
+
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     #button{
         text-align: center;
